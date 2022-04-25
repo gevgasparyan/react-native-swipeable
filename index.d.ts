@@ -84,6 +84,7 @@ export type SwipeableProps = {
 
   // misc
   onRef?: (ref: React.RefObject<Swipeable>) => void;
+  recenter: (fn?: SwipeableAnimationFn, config?: SwipeableAnimationConfig, onDone?: Function) => void;
   onPanAnimatedValueRef?: (value: Animated.AnimatedValueXY) => void;
   swipeStartMinDistance?: number;
   testID?: string;
